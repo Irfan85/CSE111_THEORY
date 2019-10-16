@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="067212dc-08c2-41f2-a07d-e936c2f74f89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment02/Task02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment02/Task03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE111_THEORY/Assignment01/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE111_THEORY/Assignment01/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE111_THEORY/Assignment01/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE111_THEORY/Assignment01/Matrix.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +36,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -138,8 +133,17 @@
       <workItem from="1570438045156" duration="71000" />
       <workItem from="1570438185188" duration="1501000" />
       <workItem from="1570535129968" duration="72000" />
-      <workItem from="1570645739698" duration="6191000" />
+      <workItem from="1570645739698" duration="6453000" />
+      <workItem from="1570880441497" duration="169000" />
     </task>
+    <task id="LOCAL-00001" summary="Assignment02 Completed">
+      <created>1570685412976</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570685412976</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,5 +161,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Assignment02 Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment02 Completed" />
   </component>
 </project>
