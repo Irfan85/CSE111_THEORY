@@ -12,13 +12,15 @@ public class Student {
     public Student(String name) {
         this.name = name;
         this.typeOfStudent = "Regular Student";
-        ID = numberOfStudents++;
+        ID = numberOfStudents;
+        numberOfStudents++;
     }
 
     public Student(String name, String typeOfStudent) {
         this.name = name;
         this.typeOfStudent = typeOfStudent;
-        ID = numberOfStudents++;
+        ID = numberOfStudents;
+        numberOfStudents++;
     }
 
     public void addCourse(Course c1, Course c2, Course c3){
