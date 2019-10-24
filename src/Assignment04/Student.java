@@ -7,7 +7,7 @@ public class Student {
     private String name, typeOfStudent;
     private int ID;
     public boolean isNsu = false;
-    ArrayList<Course> course = new ArrayList<>();
+    public ArrayList<Course> course = new ArrayList<>();
 
     public Student(String name) {
         this.name = name;
