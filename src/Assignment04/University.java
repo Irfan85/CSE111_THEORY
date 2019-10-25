@@ -17,7 +17,13 @@ public class University {
     }
 
     public void add(Student student){
-        student.isNsu = true;
+        if(hasCampus){
+            student.isNsu = true;
+            student.university = "nsu";
+        }else{
+            student.isNsu = false;
+            student.university = "brac";
+        }
         students.add(student);
     }
 

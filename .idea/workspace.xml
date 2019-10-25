@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="067212dc-08c2-41f2-a07d-e936c2f74f89" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment04/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment04/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment04/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment04/University.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +154,9 @@
       <workItem from="1570880441497" duration="169000" />
       <workItem from="1571249694934" duration="2996000" />
       <workItem from="1571926379667" duration="5695000" />
-      <workItem from="1571932151942" duration="978000" />
+      <workItem from="1571932151942" duration="1782000" />
+      <workItem from="1571941062884" duration="16000" />
+      <workItem from="1571984627858" duration="1357000" />
     </task>
     <task id="LOCAL-00001" summary="Assignment02 Completed">
       <created>1570685412976</created>
@@ -196,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571932448731</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Assignment04 Completed">
+      <created>1571933467528</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571933467528</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

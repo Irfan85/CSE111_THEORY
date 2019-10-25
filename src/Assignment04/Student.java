@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Student {
     private static int numberOfStudents = 0;
     private String name, typeOfStudent;
+    public String university;
     private int ID;
     public boolean isNsu = false;
     public ArrayList<Course> course = new ArrayList<>();
@@ -37,7 +38,7 @@ public class Student {
     }
 
     public boolean isNSU(){
-        return isNsu;
+        return !isNsu;
     }
 
     public boolean isPreUni(){
@@ -61,7 +62,7 @@ public class Student {
     }
 
     public String toString() {
-        String output = "Name: " + name + "\n" + "ID: " + ID + "\n" + typeOfStudent + "\n";
+        String output = "Name: " + name + "\n" + "ID: " + ID + "\n" + typeOfStudent + "\n" + "University: " + university + "\n";
         output = output.concat("List of Courses:");
 
         for(Course c : course){
