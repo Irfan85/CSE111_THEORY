@@ -17,13 +17,14 @@ public class University {
     }
 
     public void add(Student student){
+        student.university = this.name;
+
         if(hasCampus){
             student.isNsu = true;
-            student.university = this.name;
         }else{
             student.isNsu = false;
-            student.university = this.name;
         }
+
         students.add(student);
     }
 

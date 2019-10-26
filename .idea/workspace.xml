@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="067212dc-08c2-41f2-a07d-e936c2f74f89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment04/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment04/University.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -156,7 +155,7 @@
       <workItem from="1571932151942" duration="1782000" />
       <workItem from="1571941062884" duration="16000" />
       <workItem from="1571984627858" duration="2028000" />
-      <workItem from="1572104641187" duration="71000" />
+      <workItem from="1572104641187" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="Assignment02 Completed">
       <created>1570685412976</created>
@@ -214,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571986008290</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Assignment04 Completed">
+      <created>1572104765677</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572104765677</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
