@@ -19,10 +19,10 @@ public class University {
     public void add(Student student){
         if(hasCampus){
             student.isNsu = true;
-            student.university = "nsu";
+            student.university = this.name;
         }else{
             student.isNsu = false;
-            student.university = "brac";
+            student.university = this.name;
         }
         students.add(student);
     }
