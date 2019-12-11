@@ -193,10 +193,11 @@ public class StudentInfoPanel extends JPanel implements Hidable {
         add(dropButton, gc);
 
         // Row 9
+        gc.gridwidth = 2;
+
         gc.gridx = 0;
         gc.gridy = 8;
 
-        gc.gridwidth = 2;
         add(assignButton, gc);
 
         // Row 10
