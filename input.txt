@@ -1,0 +1,6 @@
+# These are comments and the program will ignore these lines
+# Department | ID | Name
+
+CSE 123 Abul
+BBA 234 Akkas
+BBA 345 Saif

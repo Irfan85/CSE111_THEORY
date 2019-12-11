@@ -1,4 +1,4 @@
-package Assignment07;
+package Assignment07And08;
 
 import java.io.*;
 import java.util.NoSuchElementException;
@@ -22,7 +22,7 @@ public final class DatabaseManager {
         studentProgressDatabase = new File(STUDENT_PROGRESS_DATABASE_FILE_NAME);
     }
 
-    public void populateData() {
+    public boolean populateData() {
         try {
             // Populate students
             Scanner studentScanner = new Scanner(studentDatabase);
@@ -105,14 +105,19 @@ public final class DatabaseManager {
 
         } catch (FileNotFoundException e) {
             System.err.println("File not found.");
+            return false;
         } catch (NoSuchElementException e) {
             System.err.println("Database is corrupted.");
-        } catch (NumberFormatException e){
+            return false;
+        } catch (NumberFormatException e) {
             System.err.println("Wrong number format.");
+            return false;
         }
+
+        return true;
     }
 
-    public void writeData() {
+    public boolean writeData() {
         // Writing student data
         for (Student student : studentManager.getStudentList()) {
             try {
@@ -132,7 +137,8 @@ public final class DatabaseManager {
                 bf2.flush();
                 bf2.close();
             } catch (IOException e) {
-                e.printStackTrace();
+                System.err.println("An IO Exception occurred.");
+                return false;
             }
         }
 
@@ -156,10 +162,13 @@ public final class DatabaseManager {
             bf3.close();
         } catch (IOException e) {
             System.err.println("An error occurred.");
+            return false;
         }
+
+        return true;
     }
 
-    public void clearDatabase() {
+    public boolean clearDatabase() {
         try {
             FileOutputStream fileOutputStream1 = new FileOutputStream(studentDatabase);
             FileOutputStream fileOutputStream2 = new FileOutputStream(courseDatabase);
@@ -179,8 +188,12 @@ public final class DatabaseManager {
 
         } catch (FileNotFoundException e) {
             System.err.println("File not found");
+            return false;
         } catch (IOException e) {
             System.err.println("An error occurred");
+            return false;
         }
+
+        return true;
     }
 }

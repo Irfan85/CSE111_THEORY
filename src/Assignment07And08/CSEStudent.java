@@ -1,4 +1,4 @@
-package Assignment07;
+package Assignment07And08;
 
 public class CSEStudent extends Student {
 //    public CSEStudent() {

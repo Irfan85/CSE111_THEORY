@@ -1,15 +1,48 @@
-package Assignment07;
+package Assignment07And08;
 
+import Assignment07And08.Layouts.BottomBar;
+import Assignment07And08.Layouts.MainFrame;
+
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Main {
     private static StudentManager studentManager = new StudentManager();
     private static DatabaseManager dbm = new DatabaseManager(studentManager);
 
     public static void main(String[] args) {
-        initialize();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How do you want to interact?");
+        System.out.println("Press '1' for opening up Graphical User Interface\nPress '2' for Commandline interaction");
+        try {
+            int input = sc.nextInt();
+            switch (input) {
+                case 1:
+                    boolean success = dbm.populateData();
+                    if (success) {
+                        BottomBar bottomBar = new BottomBar(dbm);
+                        new MainFrame("Assignment 07 GUI", studentManager, bottomBar);
+                    } else {
+                        System.err.println("Problem occurred while loading database.");
+                    }
+                    break;
+                case 2:
+                    initialize();
+                    saveData();
+                    break;
+                default:
+                    System.err.println("Invalid input.\nClosing app.");
+            }
+        } catch (InputMismatchException e) {
+            System.err.println("Wrong input");
+        }
+    }
+
+    public static void saveData() {
         dbm.clearDatabase();
         dbm.writeData();
     }
@@ -22,8 +55,12 @@ public class Main {
             int i = sc.nextInt();
             switch (i) {
                 case 1:
-                    dbm.populateData();
-                    takeInput(sc);
+                    boolean success = dbm.populateData();
+                    if (success) {
+                        takeInput(sc);
+                    } else {
+                        System.err.println("Problem occurred while loading database.");
+                    }
                     break;
                 case 2:
                     takeInput(sc);
@@ -84,44 +121,91 @@ public class Main {
 
     private static void addStudent(Scanner sc) {
         try {
-            System.out.println("----------Enter the details of the Student----------\n"
-                    + "'1' for CSE Student.\n"
-                    + "'2' for BBA Student.\n"
-                    + "'3' for MNS Student.");
-
-            int type = sc.nextInt();
+            System.out.println("'1' for manual input\n'2' for automated bulk input form input.txt file.");
+            int input = sc.nextInt();
             sc.nextLine();
+            if (input == 2) {
+                automatedInput();
+            } else if (input == 1) {
 
-            System.out.print("Name: ");
+                System.out.println("----------Enter the details of the Student----------\n"
+                        + "'1' for CSE Student.\n"
+                        + "'2' for BBA Student.\n"
+                        + "'3' for MNS Student.");
 
-            String name = sc.nextLine();
+                int type = sc.nextInt();
+                sc.nextLine();
 
-            System.out.print("ID: ");
+                System.out.print("Name: ");
 
-            String id = sc.nextLine();
+                String name = sc.nextLine();
 
-            System.out.println(type + " " + name + " " + id);
-            switch (type) {
-                case 1:
-                    studentManager.addStudent(new CSEStudent(name, id));
-                    break;
-                case 2:
-                    studentManager.addStudent(new BBAStudent(name, id));
-                    break;
-                case 3:
-                    studentManager.addStudent(new MNSStudent(name, id));
-                    break;
-                default:
-                    System.err.println("Unidentified type of student : " + type);
-                    break;
+                System.out.print("ID: ");
+
+                String id = sc.nextLine();
+
+                System.out.println(type + " " + name + " " + id);
+                switch (type) {
+                    case 1:
+                        studentManager.addStudent(new CSEStudent(name, id));
+                        break;
+                    case 2:
+                        studentManager.addStudent(new BBAStudent(name, id));
+                        break;
+                    case 3:
+                        studentManager.addStudent(new MNSStudent(name, id));
+                        break;
+                    default:
+                        System.err.println("Unidentified type of student : " + type);
+                        break;
+                }
+
+                //System.out.println("CALLING TAKE INPUT");
+            } else {
+                System.err.println("Wrong input.");
             }
-
-            //System.out.println("CALLING TAKE INPUT");
             takeInput(sc);
         } catch (NoSuchElementException e) {
             System.err.println("Wrong input");
-
             takeInput(sc);
+        }
+    }
+
+    public static void automatedInput() {
+        try {
+            Scanner sc = new Scanner(new File("input.txt"));
+            while (sc.hasNext()) {
+                String line = sc.nextLine();
+                if (!line.startsWith("#") && !line.equals("")) {
+                    StringTokenizer tokenizer = new StringTokenizer(line, " ");
+
+                    String department = tokenizer.nextToken();
+                    String id = tokenizer.nextToken();
+                    String name = tokenizer.nextToken();
+
+                    if (!department.equals("") && !name.equals("") && !id.equals("")) {
+                        switch (department) {
+                            case "CSE":
+                                studentManager.addStudent(new CSEStudent(name, id));
+                                break;
+                            case "BBA":
+                                studentManager.addStudent(new BBAStudent(name, id));
+                                break;
+                            case "MNS":
+                                studentManager.addStudent(new MNSStudent(name, id));
+                                break;
+                            default:
+                                System.out.println();
+                                break;
+                        }
+                    }
+                }
+            }
+
+        } catch (FileNotFoundException e) {
+            System.err.println("input.txt not found");
+        } catch (NoSuchElementException e) {
+            System.err.println("input.txt is corrupted");
         }
     }
 
@@ -301,29 +385,29 @@ public class Main {
         }
     }
 
-    public static void showStudentInfo(Scanner sc){
+    public static void showStudentInfo(Scanner sc) {
         System.out.print("Enter the id of the student who's info you want to see:");
         sc.nextLine();
         String id = sc.nextLine();
 
         Student student = studentManager.getStudentById(id);
-        if (student != null){
+        if (student != null) {
             System.out.println(student.toString());
-        }else{
+        } else {
             System.err.println("Student not found");
         }
         takeInput(sc);
     }
 
-    public static void showCourseInfo(Scanner sc){
+    public static void showCourseInfo(Scanner sc) {
         System.out.print("Enter the name of the Course:");
         sc.nextLine();
         String courseName = sc.nextLine();
 
         Course course = studentManager.isExistingCourse(courseName);
-        if (course != null){
+        if (course != null) {
             System.out.println(course.toString());
-        }else{
+        } else {
             System.err.println("Course not found");
         }
         takeInput(sc);
