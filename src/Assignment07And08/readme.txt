@@ -1,3 +1,6 @@
+This application can work both on GUI mode and Commandline mode.
+At the beginning of the program the user can chose his/her preferred mode to interact with it.
+
 I wanted to make the database as readable and clutter-free as possible.
 So, I split the database into three files.
 
