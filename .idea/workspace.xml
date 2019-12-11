@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="067212dc-08c2-41f2-a07d-e936c2f74f89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/AssignCourseDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/BottomBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/CourseDataModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/CourseForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/CourseInfoPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/CourseTablePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/DataTablePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/FormPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/Hidable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/InfoPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/StudentDataModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/StudentFrom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/StudentInfoPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/Layouts/StudentTablePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assignment07And08/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/course_database.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE111_THEORY/Assignment01/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE111_THEORY/Assignment01/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSE111_THEORY/Assignment01/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSE111_THEORY/Assignment01/Matrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment07/BBAStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment07And08/BBAStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment07/CSEStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment07And08/CSEStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment07/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment07And08/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment07/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment07And08/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment07/MNSStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment07And08/MNSStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment07/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment07And08/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment07/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment07And08/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment07/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment07And08/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment07/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment07And08/StudentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment07/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/student_database.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_progress_database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/student_progress_database.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +53,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Assignment07GUI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Assignment07And08" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -249,7 +218,7 @@
       <workItem from="1575966671377" duration="1543000" />
       <workItem from="1575973994710" duration="21420000" />
       <workItem from="1576039084292" duration="4000" />
-      <workItem from="1576066772368" duration="17280000" />
+      <workItem from="1576066772368" duration="17525000" />
     </task>
     <task id="LOCAL-00001" summary="Assignment02 Completed">
       <created>1570685412976</created>
@@ -335,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575814182966</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Assignment07 and Assignment 08 Completed">
+      <created>1576089215085</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1576089215085</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +335,8 @@
     <MESSAGE value="Assignment03 Completed" />
     <MESSAGE value="Assignment04 Completed" />
     <MESSAGE value="Assignment07 Completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment07 Completed" />
+    <MESSAGE value="Assignment07 and Assignment 08 Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment07 and Assignment 08 Completed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1576082064405">
@@ -374,10 +351,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1575506441635" />
-    <state x="393" y="5" key="CommitChangelistDialog2" timestamp="1576089180968">
+    <state x="393" y="5" key="CommitChangelistDialog2" timestamp="1576089212390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576089180968" />
+    <state x="393" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576089212390" />
     <state width="1493" height="97" key="GridCell.Tab.0.bottom" timestamp="1576089181026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -414,10 +391,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575816860407" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1575814185416">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1576089233925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1575814185416" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576089233925" />
     <state x="567" y="29" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575928222916">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
